@@ -21,8 +21,6 @@ func NewMap(cp int) *InflightMap {
 	}
 }
 
-// Set stores the packet of an Inflight message, keyed on message id. Returns
-// true if the inflight message was new.
 func (i *InflightMap) Set(key uint16, in *InflightMessage) bool {
 	i.Lock()
 	defer i.Unlock()
