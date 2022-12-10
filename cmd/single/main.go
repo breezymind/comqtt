@@ -3,18 +3,19 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/wind-c/comqtt/server/persistence/bolt"
-	"go.etcd.io/bbolt"
 	"log"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
 
+	"github.com/breezymind/comqtt/server/persistence/bolt"
+	"go.etcd.io/bbolt"
+
 	"github.com/logrusorgru/aurora"
 
-	mqtt "github.com/wind-c/comqtt/server"
-	"github.com/wind-c/comqtt/server/listeners"
+	mqtt "github.com/breezymind/comqtt/server"
+	"github.com/breezymind/comqtt/server/listeners"
 )
 
 func main() {

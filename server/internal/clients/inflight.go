@@ -1,7 +1,7 @@
 package clients
 
 import (
-	"github.com/wind-c/comqtt/server/internal/packets"
+	"github.com/breezymind/comqtt/server/internal/packets"
 )
 
 // InflightMessage contains data about a packet which is currently in-flight.

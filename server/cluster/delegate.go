@@ -3,11 +3,12 @@ package cluster
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/hashicorp/memberlist"
-	mqtt "github.com/wind-c/comqtt/server"
-	"github.com/wind-c/comqtt/server/system"
 	"sync"
 	"time"
+
+	mqtt "github.com/breezymind/comqtt/server"
+	"github.com/breezymind/comqtt/server/system"
+	"github.com/hashicorp/memberlist"
 )
 
 // Maximum number of messages to be held in the queue.
@@ -43,8 +44,8 @@ type Delegate struct {
 }
 
 func NewDelegate() *Delegate {
-	 d := &Delegate{
-		 Mch: make(chan []byte, 1024),
+	d := &Delegate{
+		Mch:   make(chan []byte, 1024),
 		State: make(map[string]*system.Info, 2),
 	}
 	go d.handleQueueDepth()
@@ -104,7 +105,7 @@ func (d *Delegate) BindMqttServer(server *mqtt.Server) {
 	d.server = server
 }
 
-//Broadcast broadcast to everyone including yourself
+// Broadcast broadcast to everyone including yourself
 func (d *Delegate) Broadcast(data []byte) {
 	d.Broadcasts.QueueBroadcast(&Broadcast{
 		msg:    data,

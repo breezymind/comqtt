@@ -4,21 +4,23 @@ Package dynamic struct provides possibility to dynamically, in runtime,
 extend or merge existing defined structs or to provide completely new struct.
 
 Main features:
-* Building completely new struct in runtime
-* Extending existing struct in runtime
-* Merging multiple structs in runtime
-* Adding new fields into struct
-* Removing existing fields from struct
-* Modifying fields' types and tags
-* Easy reading of dynamic structs
-* Mapping dynamic struct with set values to existing struct
-* Make slices and maps of dynamic structs
+
+- Building completely new struct in runtime
+- Extending existing struct in runtime
+- Merging multiple structs in runtime
+- Adding new fields into struct
+- Removing existing fields from struct
+- Modifying fields' types and tags
+- Easy reading of dynamic structs
+- Mapping dynamic struct with set values to existing struct
+- Make slices and maps of dynamic structs
 
 ## Benchmarks
 
 Environment:
-* MacBook Pro (13-inch, Early 2015), 2,7 GHz Intel Core i5
-* go version go1.11 darwin/amd64
+
+- MacBook Pro (13-inch, Early 2015), 2,7 GHz Intel Core i5
+- go version go1.11 darwin/amd64
 
 ```
 goos: darwin
@@ -34,6 +36,7 @@ BenchmarkMergeStructs_NewInstance_Parallel-4        20000000     94.3 ns/op
 ```
 
 ## Add new struct
+
 ```go
 package main
 
@@ -42,7 +45,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/wind-c/comqtt/server/internal/dtruct"
+	"github.com/breezymind/comqtt/server/internal/dtruct"
 )
 
 func main() {
@@ -84,6 +87,7 @@ func main() {
 ```
 
 ## Extend existing struct
+
 ```go
 package main
 
@@ -92,7 +96,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/wind-c/comqtt/server/internal/dtruct"
+	"github.com/breezymind/comqtt/server/internal/dtruct"
 )
 
 type Data struct {
@@ -137,6 +141,7 @@ func main() {
 ```
 
 ## Merge existing structs
+
 ```go
 package main
 
@@ -145,7 +150,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/wind-c/comqtt/server/internal/dtruct"
+	"github.com/breezymind/comqtt/server/internal/dtruct"
 )
 
 type DataOne struct {
@@ -202,7 +207,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/wind-c/comqtt/server/internal/dtruct"
+	"github.com/breezymind/comqtt/server/internal/dtruct"
 )
 
 type DataOne struct {
@@ -276,7 +281,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/wind-c/comqtt/server/internal/dtruct"
+	"github.com/breezymind/comqtt/server/internal/dtruct"
 )
 
 type Data struct {
@@ -347,7 +352,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/wind-c/comqtt/server/internal/dtruct"
+	"github.com/breezymind/comqtt/server/internal/dtruct"
 )
 
 type Data struct {

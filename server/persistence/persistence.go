@@ -3,7 +3,7 @@ package persistence
 import (
 	"errors"
 
-	"github.com/wind-c/comqtt/server/system"
+	"github.com/breezymind/comqtt/server/system"
 )
 
 const (
@@ -123,8 +123,9 @@ type KeyValue struct {
 	Value string `json:"value" msg:"value"`
 }
 
-//go:generate msgp -io=false
 // FixedHeader contains the fixed header properties of a message.
+//
+//go:generate msgp -io=false
 type FixedHeader struct {
 	Remaining int  `json:"remaining" msg:"remaining"` // the number of remaining bytes in the payload.
 	Type      byte `json:"type" msg:"type"`           // the type of the packet (PUBLISH, SUBSCRIBE, etc) from bits 7 - 4 (byte 1).
@@ -133,8 +134,9 @@ type FixedHeader struct {
 	Retain    bool `json:"retain" msg:"retain"`       // whether the message should be retained.
 }
 
-//go:generate msgp -io=false
 // Client contains client data that can be persistently stored.
+//
+//go:generate msgp -io=false
 type Client struct {
 	LWT      LWT    `json:"lwt" msg:"lwt"`           // the last-will-and-testament message for the client.
 	Username []byte `json:"username" msg:"username"` // the username the client authenticated with.
@@ -335,7 +337,7 @@ func (s *MockStore) ReadRetained() (v []Message, err error) {
 	}, nil
 }
 
-//ReadServerInfo loads the server info from the storage instance.
+// ReadServerInfo loads the server info from the storage instance.
 func (s *MockStore) ReadServerInfo() (v ServerInfo, err error) {
 	if _, ok := s.Fail["read_info"]; ok {
 		return v, errors.New("test_info")

@@ -11,10 +11,10 @@ import (
 	"github.com/logrusorgru/aurora"
 	"go.etcd.io/bbolt"
 
-	mqtt "github.com/wind-c/comqtt/server"
-	"github.com/wind-c/comqtt/server/listeners"
-	"github.com/wind-c/comqtt/server/listeners/auth"
-	"github.com/wind-c/comqtt/server/persistence/bolt"
+	mqtt "github.com/breezymind/comqtt/server"
+	"github.com/breezymind/comqtt/server/listeners"
+	"github.com/breezymind/comqtt/server/listeners/auth"
+	"github.com/breezymind/comqtt/server/persistence/bolt"
 )
 
 func main() {

@@ -1,7 +1,7 @@
 package events
 
 import (
-	"github.com/wind-c/comqtt/server/internal/packets"
+	"github.com/breezymind/comqtt/server/internal/packets"
 )
 
 // Events provides callback handlers for different event hooks.

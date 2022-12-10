@@ -2,9 +2,10 @@ package mysql
 
 import (
 	"fmt"
+
+	"github.com/breezymind/comqtt/plugin"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
-	"github.com/wind-c/comqtt/plugin"
 )
 
 type config struct {

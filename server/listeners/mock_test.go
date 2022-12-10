@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/wind-c/comqtt/server/listeners/auth"
+	"github.com/breezymind/comqtt/server/listeners/auth"
 )
 
 func TestMockEstablisher(t *testing.T) {

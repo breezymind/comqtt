@@ -2,9 +2,10 @@ package postgresql
 
 import (
 	"fmt"
+
+	"github.com/breezymind/comqtt/plugin"
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"
-	"github.com/wind-c/comqtt/plugin"
 )
 
 type config struct {

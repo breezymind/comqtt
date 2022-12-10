@@ -1,9 +1,10 @@
 package topics
 
 import (
-	"github.com/wind-c/comqtt/server/internal/packets"
 	"strings"
 	"sync"
+
+	"github.com/breezymind/comqtt/server/internal/packets"
 )
 
 // Subscriptions is a map of subscriptions keyed on client.

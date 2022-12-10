@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.etcd.io/bbolt"
 
-	"github.com/wind-c/comqtt/server/persistence"
-	"github.com/wind-c/comqtt/server/system"
+	"github.com/breezymind/comqtt/server/persistence"
+	"github.com/breezymind/comqtt/server/system"
 )
 
 const tmpPath = "testbolt.db"
@@ -428,7 +428,7 @@ func TestReadClientFail(t *testing.T) {
 
 func TestDeleteSubscriptionNoDB(t *testing.T) {
 	s := New(tmpPath, nil)
-	err := s.DeleteSubscription("test","a")
+	err := s.DeleteSubscription("test", "a")
 	require.Error(t, err)
 }
 

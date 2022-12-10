@@ -1,12 +1,13 @@
 package redis
 
 import (
+	"testing"
+
 	"github.com/alicebob/miniredis/v2"
+	"github.com/breezymind/comqtt/server/persistence"
+	"github.com/breezymind/comqtt/server/system"
 	"github.com/go-redis/redis/v8"
 	"github.com/stretchr/testify/require"
-	"github.com/wind-c/comqtt/server/persistence"
-	"github.com/wind-c/comqtt/server/system"
-	"testing"
 )
 
 var opts = &redis.Options{

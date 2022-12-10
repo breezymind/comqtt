@@ -2,20 +2,21 @@ package main
 
 import (
 	"fmt"
-	"github.com/wind-c/comqtt/server/persistence/bolt"
-	"go.etcd.io/bbolt"
 	"log"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
 
+	"github.com/breezymind/comqtt/server/persistence/bolt"
+	"go.etcd.io/bbolt"
+
 	"github.com/logrusorgru/aurora"
 
-	mqtt "github.com/wind-c/comqtt/server"
-	"github.com/wind-c/comqtt/server/events"
-	"github.com/wind-c/comqtt/server/listeners"
-	"github.com/wind-c/comqtt/server/listeners/auth"
+	mqtt "github.com/breezymind/comqtt/server"
+	"github.com/breezymind/comqtt/server/events"
+	"github.com/breezymind/comqtt/server/listeners"
+	"github.com/breezymind/comqtt/server/listeners/auth"
 )
 
 func main() {

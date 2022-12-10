@@ -2,16 +2,17 @@ package main
 
 import (
 	"fmt"
-	"github.com/wind-c/comqtt/server/listeners/auth"
 	"log"
 	"os"
 	"os/signal"
 	"syscall"
 
+	"github.com/breezymind/comqtt/server/listeners/auth"
+
 	"github.com/logrusorgru/aurora"
 
-	mqtt "github.com/wind-c/comqtt/server"
-	"github.com/wind-c/comqtt/server/listeners"
+	mqtt "github.com/breezymind/comqtt/server"
+	"github.com/breezymind/comqtt/server/listeners"
 )
 
 func main() {

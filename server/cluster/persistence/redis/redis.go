@@ -4,11 +4,12 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"github.com/go-redis/redis/v8"
-	"github.com/wind-c/comqtt/server/internal/utils"
-	"github.com/wind-c/comqtt/server/persistence"
-	"github.com/wind-c/comqtt/server/system"
 	"strconv"
+
+	"github.com/breezymind/comqtt/server/internal/utils"
+	"github.com/breezymind/comqtt/server/persistence"
+	"github.com/breezymind/comqtt/server/system"
+	"github.com/go-redis/redis/v8"
 )
 
 var (
@@ -321,7 +322,7 @@ func (s *Store) ReadRetainedByTopic(topic string) (v persistence.Message, err er
 	return v, nil
 }
 
-//ReadServerInfo loads the server info from the redis instance.
+// ReadServerInfo loads the server info from the redis instance.
 func (s *Store) ReadServerInfo() (v persistence.ServerInfo, err error) {
 	if s.db == nil {
 		return v, ErrNotConnected

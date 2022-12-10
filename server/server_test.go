@@ -14,15 +14,15 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/wind-c/comqtt/server/events"
-	"github.com/wind-c/comqtt/server/internal/circ"
-	"github.com/wind-c/comqtt/server/internal/clients"
-	"github.com/wind-c/comqtt/server/internal/packets"
-	"github.com/wind-c/comqtt/server/internal/topics"
-	"github.com/wind-c/comqtt/server/listeners"
-	"github.com/wind-c/comqtt/server/listeners/auth"
-	"github.com/wind-c/comqtt/server/persistence"
-	"github.com/wind-c/comqtt/server/system"
+	"github.com/breezymind/comqtt/server/events"
+	"github.com/breezymind/comqtt/server/internal/circ"
+	"github.com/breezymind/comqtt/server/internal/clients"
+	"github.com/breezymind/comqtt/server/internal/packets"
+	"github.com/breezymind/comqtt/server/internal/topics"
+	"github.com/breezymind/comqtt/server/listeners"
+	"github.com/breezymind/comqtt/server/listeners/auth"
+	"github.com/breezymind/comqtt/server/persistence"
+	"github.com/breezymind/comqtt/server/system"
 )
 
 type packetHook struct {

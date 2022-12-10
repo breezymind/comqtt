@@ -1,12 +1,13 @@
 package cluster
 
 import (
-	"github.com/wind-c/comqtt/server/internal/utils"
 	"os"
 	"reflect"
 	"testing"
 
-	"github.com/satori/go.uuid"
+	"github.com/breezymind/comqtt/server/internal/utils"
+
+	uuid "github.com/satori/go.uuid"
 )
 
 func InArray(val interface{}, array interface{}) bool {

@@ -4,7 +4,6 @@ package server
 import (
 	"errors"
 	"fmt"
-	"github.com/panjf2000/ants/v2"
 	"io"
 	"net"
 	"runtime"
@@ -12,16 +11,18 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/wind-c/comqtt/server/events"
-	"github.com/wind-c/comqtt/server/internal/circ"
-	"github.com/wind-c/comqtt/server/internal/clients"
-	"github.com/wind-c/comqtt/server/internal/packets"
-	"github.com/wind-c/comqtt/server/internal/topics"
-	"github.com/wind-c/comqtt/server/internal/utils"
-	"github.com/wind-c/comqtt/server/listeners"
-	"github.com/wind-c/comqtt/server/listeners/auth"
-	"github.com/wind-c/comqtt/server/persistence"
-	"github.com/wind-c/comqtt/server/system"
+	"github.com/panjf2000/ants/v2"
+
+	"github.com/breezymind/comqtt/server/events"
+	"github.com/breezymind/comqtt/server/internal/circ"
+	"github.com/breezymind/comqtt/server/internal/clients"
+	"github.com/breezymind/comqtt/server/internal/packets"
+	"github.com/breezymind/comqtt/server/internal/topics"
+	"github.com/breezymind/comqtt/server/internal/utils"
+	"github.com/breezymind/comqtt/server/listeners"
+	"github.com/breezymind/comqtt/server/listeners/auth"
+	"github.com/breezymind/comqtt/server/persistence"
+	"github.com/breezymind/comqtt/server/system"
 )
 
 const (

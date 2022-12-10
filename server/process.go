@@ -2,12 +2,13 @@ package server
 
 import (
 	"fmt"
-	"github.com/wind-c/comqtt/server/events"
-	"github.com/wind-c/comqtt/server/internal/clients"
-	"github.com/wind-c/comqtt/server/internal/packets"
-	"github.com/wind-c/comqtt/server/persistence"
 	"sync/atomic"
 	"time"
+
+	"github.com/breezymind/comqtt/server/events"
+	"github.com/breezymind/comqtt/server/internal/clients"
+	"github.com/breezymind/comqtt/server/internal/packets"
+	"github.com/breezymind/comqtt/server/persistence"
 )
 
 // processPacket processes an inbound packet for a client. Since the method is

@@ -9,9 +9,9 @@ import (
 
 	"github.com/logrusorgru/aurora"
 
-	mqtt "github.com/wind-c/comqtt/server"
-	"github.com/wind-c/comqtt/server/listeners"
-	"github.com/wind-c/comqtt/server/listeners/auth"
+	mqtt "github.com/breezymind/comqtt/server"
+	"github.com/breezymind/comqtt/server/listeners"
+	"github.com/breezymind/comqtt/server/listeners/auth"
 )
 
 var (

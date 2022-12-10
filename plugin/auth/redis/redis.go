@@ -2,8 +2,9 @@ package redis
 
 import (
 	"context"
+
+	"github.com/breezymind/comqtt/plugin"
 	"github.com/go-redis/redis/v8"
-	"github.com/wind-c/comqtt/plugin"
 )
 
 type config struct {

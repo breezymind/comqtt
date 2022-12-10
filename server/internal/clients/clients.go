@@ -12,11 +12,11 @@ import (
 
 	"github.com/rs/xid"
 
-	"github.com/wind-c/comqtt/server/events"
-	"github.com/wind-c/comqtt/server/internal/circ"
-	"github.com/wind-c/comqtt/server/internal/packets"
-	"github.com/wind-c/comqtt/server/listeners/auth"
-	"github.com/wind-c/comqtt/server/system"
+	"github.com/breezymind/comqtt/server/events"
+	"github.com/breezymind/comqtt/server/internal/circ"
+	"github.com/breezymind/comqtt/server/internal/packets"
+	"github.com/breezymind/comqtt/server/listeners/auth"
+	"github.com/breezymind/comqtt/server/system"
 )
 
 var (

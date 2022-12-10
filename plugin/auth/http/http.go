@@ -3,11 +3,12 @@ package http
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/wind-c/comqtt/plugin"
 	"io"
 	"net/http"
 	"net/url"
 	"strings"
+
+	"github.com/breezymind/comqtt/plugin"
 )
 
 const (

@@ -1,4 +1,4 @@
-module github.com/wind-c/comqtt
+module github.com/breezymind/comqtt
 
 go 1.19
 

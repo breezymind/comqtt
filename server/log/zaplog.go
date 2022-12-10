@@ -1,12 +1,13 @@
 package log
 
 import (
-	"github.com/wind-c/comqtt/server/config"
+	"os"
+	"time"
+
+	"github.com/breezymind/comqtt/server/config"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
-	"os"
-	"time"
 )
 
 const (

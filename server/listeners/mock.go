@@ -6,8 +6,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/wind-c/comqtt/server/listeners/auth"
-	"github.com/wind-c/comqtt/server/system"
+	"github.com/breezymind/comqtt/server/listeners/auth"
+	"github.com/breezymind/comqtt/server/system"
 )
 
 // MockCloser is a function signature which can be used in testing.

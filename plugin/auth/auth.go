@@ -1,6 +1,6 @@
 package auth
 
-import oauth "github.com/wind-c/comqtt/server/listeners/auth"
+import oauth "github.com/breezymind/comqtt/server/listeners/auth"
 
 type Auth interface {
 	Open() error

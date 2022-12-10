@@ -1,8 +1,9 @@
 package topics
 
 import (
-	"github.com/wind-c/comqtt/server/internal/packets"
 	"testing"
+
+	"github.com/breezymind/comqtt/server/internal/packets"
 
 	"github.com/stretchr/testify/require"
 )
