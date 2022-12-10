@@ -29,7 +29,9 @@ func (i *InflightMap) Set(key uint16, in *InflightMessage) bool {
 	if i.cp > 0 && i.cp == i.ks.Len() {
 		e := i.ks.Front()
 		i.ks.Remove(e)
-		delete(i.internal, e.Value.(uint16))
+		if e.Value != nil {
+			delete(i.internal, e.Value.(uint16))
+		}
 	}
 	i.ks.PushBack(in)
 	_, ok := i.internal[key]
